@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     ActivityMainBinding mainBinding;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,10 +38,9 @@ public class MainActivity extends AppCompatActivity {
     private void checkPermission() {
 
 
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
-                requestPermissions(PublicVariables.permission,0);
+            if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(PublicVariables.permission, 0);
 
             }
         }
@@ -63,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
 
                     case R.id.intent_call:
 
@@ -76,6 +74,11 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.intent_gallery:
+
+                        startActivity(new Intent(MainActivity.this, Access_Gallery_Activty.class));
+                        break;
+
+                    case R.id.string_data_pass:
 
                         startActivity(new Intent(MainActivity.this, Access_Gallery_Activty.class));
                         break;

@@ -15,6 +15,20 @@
         android:theme="@style/Theme.MasterProjects2"
         tools:targetApi="31">
         <activity
+            android:name=".Data_with_budle.secondActivitydata"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Data_with_budle.DataPassingwithBundleActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Gallery_Acess.Access_Gallery_Activty"
             android:exported="false">
             <meta-data

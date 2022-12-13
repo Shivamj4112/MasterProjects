@@ -51,7 +51,9 @@ public class Access_Gallery_Activty extends AppCompatActivity {
 
                 Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
+                intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
                 startActivityForResult(intent,2);
+//                startActivityForResult(Intent.createChooser(intent,"Select Picture"), 2);
             }
         });
 

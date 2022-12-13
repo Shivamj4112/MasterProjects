@@ -13,4 +13,8 @@
         android:id="@+id/intent_gallery"
         android:title="Gallery and Camera"/>
 
+    <item
+        android:id="@+id/string_data_pass"
+        android:title="String Data Pass"/>
+
 </menu>
