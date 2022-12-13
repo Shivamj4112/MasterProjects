@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.activity.masterprojects2.Activity_intent.Intent_call_Activty;
 import com.activity.masterprojects2.Activity_intent.Intent_dial_Activty;
+import com.activity.masterprojects2.Data_with_budle.DataPassingwithBundleActivity;
 import com.activity.masterprojects2.Gallery_Acess.Access_Gallery_Activty;
 import com.activity.masterprojects2.databinding.ActivityMainBinding;
 import com.google.android.material.navigation.NavigationView;
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
                     case R.id.string_data_pass:
 
-                        startActivity(new Intent(MainActivity.this, Access_Gallery_Activty.class));
+                        startActivity(new Intent(MainActivity.this, DataPassingwithBundleActivity.class));
                         break;
 
                 }

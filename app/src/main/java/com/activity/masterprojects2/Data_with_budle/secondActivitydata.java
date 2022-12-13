@@ -19,7 +19,18 @@ public class secondActivitydata extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        binding.imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                finish();
+
+            }
+        });
+
+        Bundle bundle = getIntent().getExtras();
+        String venName = bundle.getString("text");
+        binding.txtText.setText(venName);
 
     }
 }

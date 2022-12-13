@@ -20,9 +20,31 @@ public class DataPassingwithBundleActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        String text = binding.edtText.getText().toString();
+        binding.imgHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        Intent intent = new Intent(DataPassingwithBundleActivity.this,secondActivitydata.class);
+                finish();
+
+            }
+        });
+
+        binding.btnSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String text = binding.edtText.getText().toString();
+
+                Intent intent = new Intent(DataPassingwithBundleActivity.this, secondActivitydata.class);
+
+                Bundle bundle = new Bundle();
+                bundle.putString("text", text);
+                intent.putExtras(bundle);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
 }
