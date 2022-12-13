@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/intent_call"
+        android:title="Intent Call"/>
+
+    <item
+        android:id="@+id/intent_dial"
+        android:title="Intent Dial"/>
+
+    <item
+        android:id="@+id/intent_gallery"
+        android:title="Gallery and Camera"/>
+
+</menu>
